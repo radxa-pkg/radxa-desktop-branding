@@ -1,0 +1,13 @@
+{
+    "KPlugin": {
+        "Name": "Radxa",
+        "Id": "radxa",
+        "License": "cc-by-nc",
+        "Authors": [
+            {
+                "Name": "Radxa",
+                "Email": "dev@radxa.com"
+            }
+        ]
+    }
+}

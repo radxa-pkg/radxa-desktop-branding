@@ -1,0 +1,4 @@
+/.vscode*
+/overlay
+/VERSION
+.DS_Store
