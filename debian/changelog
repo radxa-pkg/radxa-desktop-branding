@@ -1,3 +1,10 @@
+radxa-desktop-branding (0.0.2) noble; urgency=medium
+
+  [ RadxaPanda ]
+  * Add a theme in the plasma global themes
+
+ -- Panda <panda@radxa.com>  Fri, 31 May 2024 19:56:07 +0300
+
 radxa-desktop-branding (0.0.1) mantic; urgency=medium
 
   [ RadxaPanda ]
