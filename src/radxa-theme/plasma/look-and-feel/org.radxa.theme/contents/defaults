@@ -11,8 +11,8 @@ Theme=breeze
 name=default
 
 [Wallpaper]
-Image=radxa
-defaultWallpaperTheme=radxa
+Image=wavy
+defaultWallpaperTheme=wavy
 
 [kcminputrc][Mouse]
 cursorTheme=breeze_cursors
