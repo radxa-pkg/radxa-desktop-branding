@@ -29,7 +29,7 @@ clean: clean-deb
 
 .PHONY: clean-deb
 clean-deb:
-	rm -rf debian/.debhelper debian/radxa-desktop-branding/ debian/debhelper-build-stamp debian/files debian/*.debhelper.log debian/*.postrm.debhelper debian/*.substvars src/radxa-theme/wallpapers/
+	rm -rf debian/.debhelper debian/radxa-desktop-branding/ debian/debhelper-build-stamp debian/files debian/*.debhelper.log debian/*.postrm.debhelper debian/*.substvars src/usr/share/wallpapers/
 
 #
 # Release

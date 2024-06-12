@@ -2,7 +2,7 @@
 
 # KDE wallpaper generator
 wp_source="wallpapers/" # example $wp_source/$wp_type_$wp_color.svg
-wp_path="src/radxa-theme/wallpapers"
+wp_path="src/usr/share/wallpapers"
 wp_types=("wavy" "blocky" "mountain")
 wp_colors=("pink" "blue" "light/dark")
 
