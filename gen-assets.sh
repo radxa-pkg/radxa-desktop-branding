@@ -1,7 +1,7 @@
 #! /bin/bash
 
 # KDE wallpaper generator
-wp_source="wallpapers/" # example $wp_source/$wp_type_$wp_color.svg
+wp_source="assets/" 
 wp_path="src/usr/share/wallpapers"
 wp_types=("wavy" "blocky" "mountain")
 wp_colors=("pink" "blue" "light/dark")
@@ -63,4 +63,26 @@ EOF
 EOF
         fi
     done
+done
+
+# Convert logos to png
+logos=(logo.svg logo-text.svg logo-text-version.svg)
+echo "Logos: ${logos[@]}"
+
+resolutions=(64 128 256)
+echo "Resolutions: ${resolutions[@]}"
+output_dir="src/usr/share/images/radxa-logos/"
+mkdir -pv "$output_dir"
+
+for svg in "${logos[@]}"; do
+  for res in "${resolutions[@]}"; do
+    png="${svg%.svg}-${res}.png"
+    echo "Generating $png from $svg at resolution $res"
+    
+    # Convert svg to png 
+    rsvg-convert "assets/${svg}" -h "$res" -o "${output_dir}${png}.raw"
+    optipng "${output_dir}${png}.raw" -out "${output_dir}${png}"
+    rm  -v "${output_dir}${png}.raw"
+    cp -v "assets/${svg}" "${output_dir}${svg}"
+  done
 done

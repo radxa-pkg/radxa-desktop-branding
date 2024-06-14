@@ -1,0 +1,13 @@
+#!/bin/sh
+set -e
+
+# Tag to allow some debhelper commands to inject relevant code
+#DEBHELPER#
+
+if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remove" ]; then
+    # Vendor logo alternative
+    update-alternatives --install \
+            /usr/share/images/vendor-logos \
+            vendor-logos \
+            /usr/share/images/radxa-logos 100 
+fi

@@ -10,7 +10,7 @@ all: build
 
 .PHONY: build
 build:
-	./gen-wallpapers.sh
+	./gen-assets.sh
 #
 # Test
 #
@@ -29,7 +29,7 @@ clean: clean-deb
 
 .PHONY: clean-deb
 clean-deb:
-	rm -rf debian/.debhelper debian/radxa-desktop-branding/ debian/debhelper-build-stamp debian/files debian/*.debhelper.log debian/*.postrm.debhelper debian/*.substvars src/usr/share/wallpapers/
+	rm -rf debian/.debhelper debian/radxa-desktop-branding/ debian/debhelper-build-stamp debian/files debian/*.debhelper.log debian/*.postrm.debhelper debian/*.substvars src/usr/share/wallpapers/ src/usr/share/images/radxa-logos
 
 #
 # Release
