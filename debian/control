@@ -13,7 +13,8 @@ Package: radxa-desktop-branding
 Architecture: all
 Section: admin
 Priority: standard
-Depends: desktop-base,
+Depends: breeze,
+         desktop-base,
          ${misc:Depends}
 Description: Branding for the desktop image.
  This package has wallpapers, logos.
