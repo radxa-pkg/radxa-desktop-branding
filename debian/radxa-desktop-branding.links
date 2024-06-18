@@ -1,0 +1,12 @@
+#!/usr/bin/dh-exec
+
+# desktop-theme alternative
+/usr/share/desktop-base/emerald-theme/grub /usr/share/desktop-base/radxa-theme/grub
+/usr/share/wallpapers/mountain /usr/share/desktop-base/radxa-theme/lockscreen
+/usr/share/wallpapers/wavy /usr/share/desktop-base/radxa-theme/wallpaper
+/usr/share/wallpapers/mountain/contents/images/3840x2160.svg /usr/share/desktop-base/radxa-theme/login/background.svg
+/usr/share/wallpapers/mountain/contents/images/3840x2160.svg /usr/share/desktop-base/radxa-theme/login/background-nologo.svg
+/usr/share/desktop-base/emerald-theme/plymouth /usr/share/desktop-base/radxa-theme/plymouth
+
+# desktop-background alternative, which takes 1920x1080.svg
+/usr/share/wallpapers/wavy/contents/images/3840x2160.svg /usr/share/wallpapers/wavy/contents/images/1920x1080.svg

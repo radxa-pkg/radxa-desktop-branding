@@ -7,7 +7,7 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
     update-alternatives --install \
             /usr/share/images/vendor-logos \
             vendor-logos \
-            /usr/share/images/radxa-logos 100 
+            /usr/share/images/radxa-logos 100
 fi
 
 #DEBHELPER#

@@ -5,8 +5,9 @@ Priority: standard
 Standards-Version: 4.6.0
 Build-Depends: debhelper (>=12~),
                devscripts,
-               lintian,
+               dh-exec,
                librsvg2-bin,
+               lintian,
                optipng
 
 Package: radxa-desktop-branding
