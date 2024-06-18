@@ -9,6 +9,7 @@ wp_colors=("pink" "blue" "light/dark")
 for wp_type in "${wp_types[@]}"; do
     for wp_color in "${wp_colors[@]}"; do
         wp_type_ucfirst="$(tr '[:lower:]' '[:upper:]' <<< ${wp_type:0:1})${wp_type:1}"
+        wp_color_ucfirst="$(tr '[:lower:]' '[:upper:]' <<< ${wp_color:0:1})${wp_color:1}"
         if [ "$wp_color" == "light/dark" ]; then
             wp_file_dark="$wp_path/$wp_type/contents/images_dark/3840x2160.svg"
             wp_file_light="$wp_path/$wp_type/contents/images/3840x2160.svg"
@@ -49,7 +50,7 @@ EOF
             cat <<EOF > $wp_path/$wp_type-$wp_color/metadata.json
 {
     "KPlugin": {
-        "Name": "$wp_type_ucfirst $wp_color",
+        "Name": "$wp_type_ucfirst $wp_color_ucfirst",
         "Id": "$wp_type-$wp_color",
         "License": "cc-by-nc",
         "Authors": [
