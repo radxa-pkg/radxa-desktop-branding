@@ -7,10 +7,10 @@
             }
         ],
         "Category": "",
-        "Description": "Radxa theme for the Plasma desktop",
-        "Id": "org.radxa.theme",
+        "Description": "Breeze Twilight adapted for Radxa",
+        "Id": "org.radxa.desktop",
         "License": "GPLv3",
-        "Name": "Radxa",
+        "Name": "Radxa Breeze",
         "EnabledByDefault": true,
         "ServiceTypes": [
             "Plasma/LookAndFeel"
