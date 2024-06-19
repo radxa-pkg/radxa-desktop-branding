@@ -1,4 +1,11 @@
-radxa-desktop-branding (0.1.0) jammy; urgency=medium
+radxa-desktop-branding (0.1.1) jammy; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: typo
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 19 Jun 2024 17:42:41 +0800
+
+radxa-desktop-branding (0.1.0) UNRELEASED; urgency=medium
 
   [ RadxaPanda ]
   * add wallpapers
