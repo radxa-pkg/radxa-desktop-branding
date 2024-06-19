@@ -1,0 +1,2 @@
+# We want to have stuff in /etc/skel
+radxa-desktop-branding: package-contains-file-in-etc-skel

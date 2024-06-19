@@ -85,5 +85,11 @@ for svg in "${logos[@]}"; do
     optipng "${output_dir}${png}.raw" -out "${output_dir}${png}"
     rm  -v "${output_dir}${png}.raw"
     cp -v "assets/${svg}" "${output_dir}${svg}"
+    if [ "$svg" == "logo.svg" ] && [ "$res" == "128" ]; then
+        mkdir -pv "src/usr/share/plasma/avatars"
+        mkdir -pv "src/etc/skel"
+        cp -v "${output_dir}${png}" "src/usr/share/plasma/avatars/radxa.png"
+        cp -v "${output_dir}${png}" "src/etc/skel/.face"
+    fi
   done
 done

@@ -1,0 +1,18 @@
+#!/bin/sh
+set -e
+
+case $1 in
+    install|upgrade)
+        conflicts="
+        /etc/skel/.face
+        "
+        for i in $conflicts
+        do
+            dpkg-divert --package radxa-desktop-branding --divert "$i.bak" --rename "$i"
+        done
+        ;;
+esac
+    
+#DEBHELPER#
+
+exit 0

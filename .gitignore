@@ -4,3 +4,5 @@
 .DS_Store
 src/usr/share/wallpapers/
 src/usr/share/images/
+src/usr/share/plasma/avatars/
+src/etc/skel/.face
