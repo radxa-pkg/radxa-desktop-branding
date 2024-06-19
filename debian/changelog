@@ -1,3 +1,34 @@
+radxa-desktop-branding (0.1.0) jammy; urgency=medium
+
+  [ RadxaPanda ]
+  * add wallpapers
+  * Set the wave wallpaper by default Fix the makefile
+  * Reorganize files, add logo to gdm, set lockscreen wallpaper
+  * Add radxa logos
+  * Update previews
+  * feat: add radxa avatar to plasma and /etc/skel Closes issue #2
+  * fix: fix theme description
+
+  [ ZHANG Yuntian ]
+  * fix: lock screen should follow current desktop wallpaper
+  * fix: define the required dependencies
+  * fix: update typo
+  * format: #DEBHELPER# stays behind
+  * fix: update incorrect theme text
+  * refactor: rename to org.radxa.desktop to match existing naming pattern
+  * fix: add breeze into runtime dependency
+  * format: update new line count
+  * fix: remove unncessary lintian-overrides
+  * fix: use correct source package name
+  * fix: clean src/usr/share/images/ folder as well
+  * fix: capitalize color name
+  * feat: prepare as a desktop-theme alternative
+  * fix: use radxa-plymouth-theme
+  * fix: fix typo
+  * chore: sync CI commands with rsetup
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 19 Jun 2024 17:16:04 +0800
+
 radxa-desktop-branding (0.0.2) noble; urgency=medium
 
   [ RadxaPanda ]
