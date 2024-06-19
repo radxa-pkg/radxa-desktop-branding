@@ -18,7 +18,7 @@ radxa-desktop-branding (0.1.0) jammy; urgency=medium
   * refactor: rename to org.radxa.desktop to match existing naming pattern
   * fix: add breeze into runtime dependency
   * format: update new line count
-  * fix: remove unncessary lintian-overrides
+  * fix: remove unnecessary lintian-overrides
   * fix: use correct source package name
   * fix: clean src/usr/share/images/ folder as well
   * fix: capitalize color name
