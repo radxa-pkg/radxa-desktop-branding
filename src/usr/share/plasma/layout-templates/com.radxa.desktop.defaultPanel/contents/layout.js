@@ -40,7 +40,7 @@ if (panel.formFactor === "horizontal") {
 
 var kickoff = panel.addWidget("org.kde.plasma.kickoff")
 kickoff.currentConfigGroup = ["Configuration/General"]
-kickoff.writeConfig("icon", "/usr/share/plasma/layout-templates/org.radxa.desktop.defaultPanel/contents/images/radxalogo.svg")
+kickoff.writeConfig("icon", "/usr/share/plasma/layout-templates/com.radxa.desktop.defaultPanel/contents/images/radxalogo.svg")
 panel.addWidget("org.kde.plasma.pager")
 panel.addWidget("org.kde.plasma.icontasks")
 panel.addWidget("org.kde.plasma.marginsseparator")
