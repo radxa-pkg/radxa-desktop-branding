@@ -1,4 +1,4 @@
-loadTemplate("org.radxa.desktop.defaultPanel")
+loadTemplate("com.radxa.desktop.defaultPanel")
 
 var desktopsArray = desktopsForActivity(currentActivity());
 for( var j = 0; j < desktopsArray.length; j++) {

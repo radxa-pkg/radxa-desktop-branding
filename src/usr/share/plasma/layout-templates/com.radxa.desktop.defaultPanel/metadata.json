@@ -10,7 +10,7 @@
         "Dependencies": [
         ],
         "EnabledByDefault": true,
-        "Id": "org.radxa.desktop.defaultPanel",
+        "Id": "com.radxa.desktop.defaultPanel",
         "License": "GPLv3",
         "Name": "Radxa Default Panel",
         "ServiceTypes": [
