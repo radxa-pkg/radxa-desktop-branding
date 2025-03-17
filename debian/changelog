@@ -1,3 +1,13 @@
+radxa-desktop-branding (0.1.2) noble; urgency=medium
+
+  [ RadxaPanda ]
+  * refactor: change references of org.radxa to com.radxa closes #5
+
+  [ ZHANG Yuntian ]
+  * chore: enable CODEOWNERS
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 17 Mar 2025 08:12:37 +0000
+
 radxa-desktop-branding (0.1.1) jammy; urgency=medium
 
   [ ZHANG Yuntian ]
