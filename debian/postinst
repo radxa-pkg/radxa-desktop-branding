@@ -8,6 +8,11 @@ if [ "$1" = "configure" ] || [ "$1" = "abort-upgrade" ] || [ "$1" = "abort-remov
             /usr/share/images/vendor-logos \
             vendor-logos \
             /usr/share/images/radxa-logos 100
+    # Desktop theme alternative
+    update-alternatives --install \
+            /usr/share/desktop-base/active-theme \
+            desktop-theme \
+            /usr/share/desktop-base/radxa-theme 100
 fi
 
 #DEBHELPER#

@@ -6,6 +6,10 @@ if [ "$1" = "remove" ] || [ "$1" = "deconfigure" ]; then
     update-alternatives --remove \
             vendor-logos \
             /usr/share/images/radxa-logos
+
+    update-alternatives --remove \
+            desktop-theme \
+            /usr/share/desktop-base/radxa-theme
 fi
 
 #DEBHELPER#
