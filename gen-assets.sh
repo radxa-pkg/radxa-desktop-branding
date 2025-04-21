@@ -5,6 +5,7 @@ wp_source="assets/"
 wp_path="src/usr/share/wallpapers"
 wp_types=("wavy" "blocky" "mountain")
 wp_colors=("pink" "blue" "light/dark")
+theme_path=""
 
 for wp_type in "${wp_types[@]}"; do
     for wp_color in "${wp_colors[@]}"; do
@@ -21,7 +22,8 @@ for wp_type in "${wp_types[@]}"; do
             cp -v $wp_source_file_dark $wp_file_dark
             cp -v $light_source_file $wp_file_light
             echo "Generating metadata.json for $wp_type Light/Dark"
-            cat <<EOF > $wp_path/$wp_type/metadata.json
+            theme_path="$wp_type"
+            cat <<EOF > $wp_path/$theme_path/metadata.json
 {
     "KPlugin": {
         "Name": "$wp_type_ucfirst Light/Dark",
@@ -47,7 +49,8 @@ EOF
             mkdir -pv $wp_path/$wp_type-$wp_color/contents/images
             cp -v $wp_source_file $wp_file
             echo "Generating metadata.json for $wp_type_ucfirst $wp_color"
-            cat <<EOF > $wp_path/$wp_type-$wp_color/metadata.json
+            theme_path="$wp_type-$wp_color"
+            cat <<EOF > $wp_path/$theme_path/metadata.json
 {
     "KPlugin": {
         "Name": "$wp_type_ucfirst $wp_color_ucfirst",
@@ -63,6 +66,19 @@ EOF
 }
 EOF
         fi
+
+        cat <<EOF > $wp_path/$theme_path/gnome-background.xml
+<background>
+  <static>
+    <duration>8640000.0</duration>
+    <file>
+      <size width="1920" height="1080">/usr/share/wallpapers/$theme_path/contents/images/1920x1080.svg</size>
+      <size width="3840" height="2160">/usr/share/wallpapers/$theme_path/contents/images/3840x2160.svg</size>
+    </file>
+  </static>
+</background>
+
+EOF
     done
 done
 
