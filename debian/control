@@ -14,8 +14,7 @@ Package: radxa-desktop-branding
 Architecture: all
 Section: admin
 Priority: standard
-Depends: breeze,
-         desktop-base,
+Depends: desktop-base,
          radxa-plymouth-theme,
          ${misc:Depends}
 Description: Branding for the desktop image.
