@@ -14,7 +14,7 @@ Package: radxa-desktop-branding
 Architecture: all
 Section: admin
 Priority: standard
-Depends: desktop-base,
+Depends: desktop-base | kubuntu-settings-desktop,
          radxa-plymouth-theme,
          ${misc:Depends}
 Description: Branding for the desktop image.
