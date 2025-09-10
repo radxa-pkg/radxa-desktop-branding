@@ -7,7 +7,7 @@ case $1 in
     remove)
         conflicts="
         /etc/skel/.face
-        /usr/share/sddm/themes/breeze/theme.conf.user
+        /usr/share/sddm/themes/breeze/theme.conf
         "
         for i in $conflicts
         do
