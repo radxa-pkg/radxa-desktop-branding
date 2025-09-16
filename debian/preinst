@@ -5,6 +5,7 @@ case $1 in
     install|upgrade)
         conflicts="
         /etc/skel/.face
+        /etc/xdg/kcm-about-distrorc
         /usr/share/sddm/themes/breeze/theme.conf
         "
         for i in $conflicts
