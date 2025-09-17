@@ -1,0 +1,31 @@
+name: Monthly Version Update
+on:
+  schedule:
+    - cron: '0 0 1 * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v5
+      with:
+        submodules: recursive
+        fetch-depth: 0
+        token: ${{secrets.GIT_PUSH_TOKEN}}
+    - name: Update version
+      run: |
+        version=$(date +'%y.%m')
+        file="src/etc/xdg/kcm-about-distrorc"
+        sed -i "s/^Version=.*$/Version=$version/" $file
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        if ! git diff --quiet; then
+          git add $file
+          git commit -m "chore: update about page version to $version"
+          git push
+        fi
