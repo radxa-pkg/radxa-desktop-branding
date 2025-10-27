@@ -6,6 +6,7 @@ on:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   build:
@@ -29,3 +30,7 @@ jobs:
           git commit -m "chore: update about page version to $version"
           git push
         fi
+    - name: Create release
+      env:
+        GH_TOKEN: ${{secrets.GITHUB_TOKEN}}
+      run: gh workflow run .github/workflows/new_version.yaml
