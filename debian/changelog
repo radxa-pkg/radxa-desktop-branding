@@ -1,3 +1,14 @@
+radxa-desktop-branding (0.1.5) noble; urgency=medium
+
+  [ github-actions[bot] ]
+  * chore: update about page version to 25.10
+  * chore: update about page version to 25.11
+
+  [ HE Zhengyu ]
+  * feat: create release after monthly version update
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Sat, 01 Nov 2025 06:50:22 +0000
+
 radxa-desktop-branding (0.1.4) noble; urgency=medium
 
   [ Jiali Chen ]
