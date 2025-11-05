@@ -1,0 +1,11 @@
+main_build: gen-assets
+
+clean: clean-assets
+
+.PHONY: gen-assets
+gen-assets:
+	./gen-assets.sh
+
+.PHONY: clean-assets
+clean-assets:
+	rm -rf src/usr/share/wallpapers/ src/usr/share/images/
