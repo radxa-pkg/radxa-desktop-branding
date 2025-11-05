@@ -8,7 +8,7 @@ Build-Depends: debhelper (>=12~),
                dh-exec,
                librsvg2-bin,
                lintian,
-               optipng
+               optipng:arm64
 
 Package: radxa-desktop-branding
 Architecture: all
