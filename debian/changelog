@@ -1,3 +1,14 @@
+radxa-desktop-branding (0.1.6) noble; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * fix: restore build instruction
+  * HACK: workaround optipng conflict
+
+  [ github-actions[bot] ]
+  * chore: update about page version to 25.12
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 01 Dec 2025 01:56:24 +0000
+
 radxa-desktop-branding (0.1.5) noble; urgency=medium
 
   [ github-actions[bot] ]
