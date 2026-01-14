@@ -1,4 +1,5 @@
 {
+    "KPackageStructure": "Plasma/LayoutTemplate",
     "KPlugin": {
         "Authors": [
             {
@@ -7,16 +8,11 @@
             }
         ],
         "Category": "",
-        "Dependencies": [
-        ],
+        "Description": "Default panel featuring application launcher, task manager and system tray",
         "EnabledByDefault": true,
         "Id": "com.radxa.desktop.defaultPanel",
         "License": "GPLv3",
         "Name": "Radxa Default Panel",
-        "ServiceTypes": [
-            "Plasma/LayoutTemplate"
-        ],
-        "Version": "0.1",
         "Website": "https://radxa.com/"
     },
     "X-Plasma-ContainmentCategories": [

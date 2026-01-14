@@ -1,4 +1,5 @@
 {
+    "KPackageStructure": "Plasma/LookAndFeel",
     "KPlugin": {
         "Authors": [
             {
@@ -11,11 +12,6 @@
         "Id": "com.radxa.desktop",
         "License": "GPLv3",
         "Name": "Radxa Breeze",
-        "EnabledByDefault": true,
-        "ServiceTypes": [
-            "Plasma/LookAndFeel"
-        ],
-        "Version": "0.1",
         "Website": "https://radxa.com/"
     },
     "Keywords": "Desktop;Workspace;Appearance;Look and Feel;Logout;Lock;Suspend;Shutdown;Hibernate;",
