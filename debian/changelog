@@ -1,3 +1,10 @@
+radxa-desktop-branding (0.2.0) noble; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * chore: update theme to be Plasma 6 compatible
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 14 Jan 2026 08:36:43 +0000
+
 radxa-desktop-branding (0.1.7) noble; urgency=medium
 
   [ CodeChenL ]
