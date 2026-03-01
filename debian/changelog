@@ -1,3 +1,10 @@
+radxa-desktop-branding (0.2.2) noble; urgency=medium
+
+  [ github-actions[bot] ]
+  * chore: update about page version to 26.03
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Sun, 01 Mar 2026 02:24:37 +0000
+
 radxa-desktop-branding (0.2.1) noble; urgency=medium
 
   [ github-actions[bot] ]
