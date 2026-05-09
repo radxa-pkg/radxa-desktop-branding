@@ -2,7 +2,9 @@
   "*": {
     "Releases": [
       "trixie",
-      "trixie-test"
+      "trixie-test",
+      "resolute",
+      "resolute-test"
     ]
   }
 }
