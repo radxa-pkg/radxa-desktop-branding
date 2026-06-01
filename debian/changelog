@@ -1,3 +1,13 @@
+radxa-desktop-branding (0.2.5) noble; urgency=medium
+
+  [ ZHANG Yuntian ]
+  * Update pkg.conf.template
+
+  [ github-actions[bot] ]
+  * chore: update about page version to 26.06
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Mon, 01 Jun 2026 04:04:52 +0000
+
 radxa-desktop-branding (0.2.4) noble; urgency=medium
 
   [ github-actions[bot] ]
