@@ -1,3 +1,10 @@
+radxa-desktop-branding (0.2.6) noble; urgency=medium
+
+  [ github-actions[bot] ]
+  * chore: update about page version to 26.07
+
+ -- "Radxa Computer Co., Ltd" <dev@radxa.com>  Wed, 01 Jul 2026 03:54:55 +0000
+
 radxa-desktop-branding (0.2.5) noble; urgency=medium
 
   [ ZHANG Yuntian ]
